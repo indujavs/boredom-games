@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Break — Tiny games for a bored moment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Little Break home"><span class="brand-mark">✳</span> little break</a>
+    <span class="top-note">A tiny pause, just for you <span aria-hidden="true">☁</span></span>
+  </header>
+
+  <main id="home">
+    <section class="welcome" aria-labelledby="welcome-title">
+      <div class="welcome-copy">
+        <p class="eyebrow">YOUR MINI ESCAPE</p>
+        <h1 id="welcome-title">Bored? Let's<br><span>play a little.</span></h1>
+        <p class="intro">Four tiny games. One very patient computer.<br>Pick a game and give your brain a breather.</p>
+        <a class="primary-button" href="#games">Pick a game <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="welcome-art" aria-hidden="true">
+        <span class="spark spark-one">✦</span><span class="spark spark-two">✳</span>
+        <div class="sun">☀</div><div class="cloud">☁</div>
+        <div class="art-note">take it<br>easy<span>♡</span></div>
+        <span class="art-dot dot-one"></span><span class="art-dot dot-two"></span>
+      </div>
+    </section>
+
+    <section class="games-section" id="games" aria-labelledby="games-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE GAME CORNER</p><h2 id="games-title">What sounds fun?</h2></div>
+        <span class="round-doodle" aria-hidden="true">✿</span>
+      </div>
+      <div class="game-grid">
+        <button class="game-card card-pink" data-game="tic" aria-label="Play Tic-Tac-Toe">
+          <span class="card-icon" aria-hidden="true"><span>×</span><span>○</span><span>×</span></span>
+          <span class="card-label">CLASSIC DUEL</span><strong>Tic-Tac-Toe</strong><span class="card-bottom">You vs computer <b>↗</b></span>
+        </button>
+        <button class="game-card card-yellow" data-game="quiz" aria-label="Play Guess the Character">
+          <span class="card-icon quiz-icon" aria-hidden="true">?<i>!</i></span>
+          <span class="card-label">WHO AM I?</span><strong>Guess the Character</strong><span class="card-bottom">A little guessing game <b>↗</b></span>
+        </button>
+        <button class="game-card card-blue" data-game="rps" aria-label="Play Rock, Paper, Scissors">
+          <span class="card-icon rps-icon" aria-hidden="true">✊ ✋ ✌</span>
+          <span class="card-label">MAKE YOUR MOVE</span><strong>Rock, Paper, Scissors</strong><span class="card-bottom">You vs computer <b>↗</b></span>
+        </button>
+        <button class="game-card card-green" data-game="coin" aria-label="Play Heads or Tails">
+          <span class="card-icon coin-icon" aria-hidden="true">H<span>or</span>T</span>
+          <span class="card-label">CALL THE FLIP</span><strong>Heads or Tails</strong><span class="card-bottom">Can you beat a coin? <b>↗</b></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="play-area" id="play-area" aria-live="polite" hidden>
+      <div class="play-header"><div><p class="eyebrow">GAME TIME</p><h2 id="play-title">Let's play</h2></div><button class="close-button" id="close-game" aria-label="Close game">×</button></div>
+      <div id="game-content"></div>
+    </section>
+    <footer><span>Made for the in-between moments</span><span>✳ &nbsp; breathe in, play on &nbsp; ✳</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
